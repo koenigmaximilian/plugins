@@ -73,6 +73,9 @@ import Distribution.Package hiding (depends, packageName, PackageName(..)
 #if MIN_VERSION_ghc(7,10,0)
                                    , installedPackageId
 #endif
+#if MIN_VERSION_ghc(8,2,0)
+                                   , Module(..)
+#endif
   )
 import Distribution.Text
 
